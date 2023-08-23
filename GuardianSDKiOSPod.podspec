@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GuardianSDKiOSPod'
-  s.version          = '1.1.66'
+  s.version          = '1.2.3'
   s.summary          = 'distribute GuardianSDKiOS for private'
   s.description      = 'distribute GuardianSDKiOS for private. 2023-03-27'
 
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # s.source           = { :git => 'https://github.com/fnsvalue-git/PodCreateTest.git', :tag => s.version.to_s }
   s.source           = { :git => 'https://github.com/fnsvalue-git/GuardianSDKiOSPod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.source_files  = "GuardianSDKiOS", "GuardianSDKiOS/**/*.{h,m}"
+  s.source_files  = "GuardianSDKiOS", "GuardianSDKiOS/**/*.{h,m,swift}"
 
 
   s.platform = :ios
@@ -29,8 +29,8 @@ Pod::Spec.new do |s|
   ## s.source_files  = 'PrivateGuardianSDKiOS/**/*'
   ## s.exclude_files = "Classes/Exclude"
 
-  # s.dependency 'Alamofire', '4.4.0'
-  s.dependency 'Alamofire', '~> 4.4'
+  s.dependency 'Alamofire', '~> 5.5'
+  # s.dependency 'Alamofire', '~> 4.4'
   s.dependency 'CryptoSwift', '1.3.2'
   s.dependency 'SwiftyJSON'
   s.dependency 'StompClientLib'
